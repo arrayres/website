@@ -1,0 +1,16 @@
+arrayres-colors-hash = {
+  clouds: {
+    normal: rgba(236, 240, 241, 1.0)
+  },
+  alizarin: {
+    normal: rgba(231, 76, 60, 1.0)
+  },
+  midnight-blue: {
+    normal: rgba(44, 62, 80, 1.0)
+    shadow: rgba(44, 62, 80, 0.1)
+  }
+}
+
+arrayres-color(colorName, colorVariation = 'normal')
+  colorGroup = arrayres-colors-hash[colorName]
+  colorGroup[colorVariation]

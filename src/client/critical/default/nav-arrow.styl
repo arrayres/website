@@ -1,0 +1,49 @@
+@import 'colors'
+
+$arrow
+  position absolute
+  width 0
+  height 0
+  border 0.5rem solid transparent
+
+$arrow-up
+  @extends $arrow
+  bottom calc(50% - 0.25rem)
+  left calc(50% - 0.5rem)
+
+$arrow-down
+  @extends $arrow
+  top calc(50% - 0.25rem)
+  left calc(50% - 0.5rem)
+
+.arrow-up--clouds
+  @extends $arrow-up
+  border-bottom-color arrayres-color('midnight-blue')
+
+.arrow-down--clouds
+  @extends $arrow-down
+  border-top-color arrayres-color('midnight-blue')
+
+.arrow-up--alizarin
+  @extends $arrow-up
+  border-bottom-color arrayres-color('clouds')
+
+.arrow-down--alizarin
+  @extends $arrow-down
+  border-top-color arrayres-color('clouds')
+
+.nav-link-up--clouds:hover
+  .arrow-up--clouds
+    border-bottom-color arrayres-color('clouds')
+
+.nav-link-down--clouds:hover
+  .arrow-down--clouds
+    border-top-color arrayres-color('clouds')
+
+.nav-link-up--alizarin:hover
+  .arrow-up--alizarin
+    border-bottom-color arrayres-color('alizarin')
+
+.nav-link-down--alizarin:hover
+  .arrow-down--alizarin
+    border-top-color arrayres-color('alizarin')

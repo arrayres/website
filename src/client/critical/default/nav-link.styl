@@ -1,0 +1,41 @@
+@import 'colors'
+
+$nav-link
+  display block
+  position absolute
+  width 2rem
+  height 2rem
+  text-decoration none
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+  &:active
+    background none
+
+$nav-link-up
+  @extends $nav-link
+  right 3rem
+  top 3rem
+
+$nav-link-down
+  @extends $nav-link
+  right 3rem
+  bottom 3rem
+
+.nav-link-up--clouds
+  @extends $nav-link-up
+  &:hover
+    background-color arrayres-color('midnight-blue')
+
+.nav-link-up--alizarin
+  @extends $nav-link-up
+  &:hover
+    background-color arrayres-color('clouds')
+
+.nav-link-down--clouds
+  @extends $nav-link-down
+  &:hover
+    background-color arrayres-color('midnight-blue')
+
+.nav-link-down--alizarin
+  @extends $nav-link-down
+  &:hover
+    background-color arrayres-color('clouds')

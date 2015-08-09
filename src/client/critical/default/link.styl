@@ -1,0 +1,23 @@
+@import 'colors'
+
+$link
+  cursor pointer
+  text-decoration none
+  color inherit
+
+.link--clouds
+  @extends $link
+  background-color arrayres-color('midnight-blue', 'shadow')
+
+  &:hover
+    color arrayres-color('clouds')
+    background-color arrayres-color('midnight-blue')
+
+.link--alizarin
+  @extends $link
+  border-bottom 1px solid arrayres-color('clouds')
+  background-color transparent
+
+  &:hover
+    color arrayres-color('alizarin')
+    background-color arrayres-color('clouds')
