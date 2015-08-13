@@ -3,7 +3,7 @@
   "description": "ArrayResolution Website",
   "homepage": "http://hft.exchange",
   "author": "Oleg Sklyanchuk <sklyanchuk@gmail.com>",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "CC BY-NC-ND 4.0",
   "scripts": {
     "dev": "ARRAYRES_PORT=1337 ARRAYRES_CACHE_AGE_INDEX=0 ARRAYRES_CACHE_AGE_ASSETS=0 node_modules/.bin/gulp dev:serve",
