@@ -1,6 +1,17 @@
+@import 'dimensions'
+
 .text-block
   display block
   font-size 1.1rem
   line-height 1.6
   max-width 50rem
   text-align justify
+
+@media (max-width: $mobile-landscape)
+  .text-block
+    max-width 80%
+    font-size 1rem
+
+@media (max-width: $mobile-landscape)
+  .todo-list
+    padding-left 1.5rem

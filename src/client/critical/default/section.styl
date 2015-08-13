@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'dimensions'
 
 $section
   position relative
@@ -21,3 +22,9 @@ $section
   border-bottom 1px dashed arrayres-color('clouds')
   color arrayres-color('clouds')
   background-color arrayres-color('alizarin')
+
+@media (max-width: $mobile-landscape)
+  .section--available-positions
+  .section--high-frequency-trading
+    flex 1
+    padding 2rem 0
